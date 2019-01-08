@@ -73,9 +73,7 @@ public class ArrayListNotes
         /*
          * The size method returns the number of elements in the list.
          */
-        int listSize = list.size();
-        
-        for(int i = 0; i < listSize; i++)
+        for(int i = 0; i < list.size(); i++)
         {
             /*
              * The get method returns the element at the specified
@@ -89,6 +87,7 @@ public class ArrayListNotes
                  *      subsequent elements are "shifted".
                  */
                 list.remove(i);
+                i--;
             }
         }
     }
