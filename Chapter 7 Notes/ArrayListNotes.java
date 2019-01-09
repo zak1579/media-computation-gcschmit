@@ -73,9 +73,7 @@ public class ArrayListNotes
         /*
          * The size method returns the number of elements in the list.
          */
-        int listSize = list.size();
-        
-        for(int i = 0; i < listSize; i++)
+        for(int i = 0; i < list.size(); i++)
         {
             /*
              * The get method returns the value of the element at
@@ -90,6 +88,18 @@ public class ArrayListNotes
                  *      specfied index from the list. All subsequent
                  *      elements are "shifted left".
                  */
+                list.remove(i);
+                i--;
+            }
+        }
+    }
+    
+    public static void removeEvens2(ArrayList<Integer> list)
+    {
+        for(int i = list.size() - 1; i >= 0; i--)
+        {
+            if(list.get(i) % 2 == 0)
+            {
                 list.remove(i);
             }
         }
