@@ -64,7 +64,7 @@ public class ArrayListNotes
     }
     
     /**
-     * Removes even numberr from the specified list
+     * Removes even number from the specified list
      * 
      * @param list the list of numbers to potentially remove
      */
@@ -88,6 +88,17 @@ public class ArrayListNotes
                  */
                 list.remove(i);
                 i--;
+            }
+        }
+    }
+    
+    public static void removeEvens2(ArrayList<Integer> list)
+    {
+        for(int i = list.size() - 1; i >= 0; i--)
+        {
+            if(list.get(i) % 2 == 0)
+            {
+                list.remove(i);
             }
         }
     }
