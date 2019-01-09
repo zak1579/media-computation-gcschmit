@@ -93,5 +93,16 @@ public class ArrayListNotes
             }
         }
     }
+    
+    public static void removeEvens2(ArrayList<Integer> list)
+    {
+        for(int i = list.size() - 1; i >= 0; i--)
+        {
+            if(list.get(i) % 2 == 0)
+            {
+                list.remove(i);
+            }
+        }
+    }
 
 }
